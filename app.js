@@ -39,6 +39,6 @@ app.get('/', (req, res) => {
 
 app.use(gradeRouter);
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 8081, () => {
   console.log('API running!')
 });
